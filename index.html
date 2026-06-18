@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Dela Cruz — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <span class="nav-name">Juan Dela Cruz</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="about">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">BS Computer Science · UP Diliman</p>
+      <h1 class="hero-name">Juan<br>Dela Cruz</h1>
+      <p class="hero-desc">
+        4th year computer science student building software for real-world Filipino problems —
+        from barangay records to crop disease detection to smarter class scheduling.
+      </p>
+      <div class="hero-meta">
+        <span>📍 Quezon City, PH</span>
+        <span>🎓 Class of 2026</span>
+        <span>GWA 1.75 — Very Good</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View projects</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-avatar" aria-hidden="true">JD</div>
+  </header>
+
+  <section class="section" id="academics">
+    <div class="container">
+      <h2 class="section-label">Academics</h2>
+      <div class="academics-grid">
+        <div class="stat-card">
+          <span class="stat-num">1.75</span>
+          <span class="stat-desc">Cumulative GWA</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">148</span>
+          <span class="stat-desc">Units completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">4th</span>
+          <span class="stat-desc">Year standing</span>
+        </div>
+      </div>
+
+      <div class="subject-table">
+        <div class="subject-head">
+          <span>Recent subjects</span>
+          <span>Grade</span>
+        </div>
+        <div class="subject-row">
+          <span>CS 198 — Special Topics in CS</span>
+          <span class="grade">1.00</span>
+        </div>
+        <div class="subject-row">
+          <span>CS 197 — Undergraduate Thesis II</span>
+          <span class="grade">1.25</span>
+        </div>
+        <div class="subject-row">
+          <span>CS 150 — Design & Analysis of Algorithms</span>
+          <span class="grade">1.50</span>
+        </div>
+        <div class="subject-row">
+          <span>CS 145 — Machine Learning</span>
+          <span class="grade">1.50</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-label">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Undergraduate thesis</span>
+            <span class="project-lang python">Python</span>
+          </div>
+          <h3 class="project-title">AI-assisted scheduling system</h3>
+          <p class="project-desc">Machine learning–based class scheduling optimizer for the university registrar. Uses constraint satisfaction algorithms to minimize conflicts across 300+ sections.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ai-scheduler" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Full-stack web app</span>
+            <span class="project-lang js">JavaScript</span>
+          </div>
+          <h3 class="project-title">Barangay management system</h3>
+          <p class="project-desc">Web application for local barangay records management — digitizing resident profiles, clearance issuance, and incident logs for LGUs.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/barangay-app" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Mobile app</span>
+            <span class="project-lang dart">Dart</span>
+          </div>
+          <h3 class="project-title">Plant disease detector</h3>
+          <p class="project-desc">Mobile app using TensorFlow Lite image recognition to detect common crop diseases, designed for Filipino farmers with offline support and Tagalog UI.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/plant-disease-detector" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Competitive programming</span>
+            <span class="project-lang python">Python</span>
+          </div>
+          <h3 class="project-title">Algolympics 2024 solutions</h3>
+          <p class="project-desc">Documented solutions and write-ups from the UP Algolympics 2024 competition. Covers graph problems, DP, greedy, and geometry.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/algolympics-solutions" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="achievements">
+    <div class="container">
+      <h2 class="section-label">Achievements</h2>
+      <div class="achievements-list">
+        <div class="achievement">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-body">
+            <h3>Dean's Lister — AY 2024–2025</h3>
+            <p>Recognized for academic excellence, 1st and 2nd semester, UP Diliman College of Engineering</p>
+          </div>
+          <span class="achievement-year">2025</span>
+        </div>
+        <div class="achievement">
+          <div class="achievement-icon">🥈</div>
+          <div class="achievement-body">
+            <h3>2nd place — UP Algolympics 2024</h3>
+            <p>University-wide competitive programming competition with 80+ competing teams</p>
+          </div>
+          <span class="achievement-year">2024</span>
+        </div>
+        <div class="achievement">
+          <div class="achievement-icon">👥</div>
+          <div class="achievement-body">
+            <h3>President, UP Computer Science Society</h3>
+            <p>Led the organization with 200+ active members, AY 2023–2024. Organized DevCon, hackathons, and industry talks.</p>
+          </div>
+          <span class="achievement-year">2024</span>
+        </div>
+        <div class="achievement">
+          <div class="achievement-icon">🎖️</div>
+          <div class="achievement-body">
+            <h3>Dean's Lister — AY 2022–2023</h3>
+            <p>Recognized for academic excellence, 1st and 2nd semester</p>
+          </div>
+          <span class="achievement-year">2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-label">Contact</h2>
+      <p class="contact-intro">Open to internships, research collabs, and freelance projects. Reach out anytime.</p>
+      <div class="contact-links">
+        <a href="mailto:juan.delacruz@up.edu.ph" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>juan.delacruz@up.edu.ph</span>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          <span>github.com/yourusername</span>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>linkedin.com/in/yourusername</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Juan Dela Cruz · BS Computer Science · UP Diliman · 2026</p>
+  </footer>
+
+</body>
+</html>
