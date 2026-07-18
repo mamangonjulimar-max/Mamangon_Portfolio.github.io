@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julimar B. Mamangon Jr. — Portfolio</title>
+  <script>
+    // Applies saved theme before first paint to avoid a flash. Default is light.
+    (function () {
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <span class="nav-name">Julimar B. Mamangon Jr.</span>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="icon-to-dark" aria-hidden="true">🌙</span>
+        <span class="icon-to-light" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="about">
+    <div class="hero-inner reveal">
+      <p class="hero-eyebrow">BS Information Systems · Davao Del Norte State College</p>
+      <h1 class="hero-name">Julimar<br>Mamangon</h1>
+      <p class="hero-desc">
+        Incoming 4th-year Bachelor of Science in Information Systems student focused on building practical software solutions that address real-world needs. My work involves developing systems that improve community services, business operations, and institutional processes in the Philippines.
+      </p>
+      <div class="hero-meta">
+        <span>📍 Panabo City, PH</span>
+        <span>🎓 Class of 2026</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View projects</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <img src="photo.jpg" alt="Julimar B. Mamangon Jr." class="hero-avatar hero-photo reveal" />
+  </header>
+
+  <!-- EDUCATIONAL BACKGROUND -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-label">Educational background</h2>
+      <div class="edu-list">
+
+        <div class="edu-item reveal">
+          <div class="edu-level">College</div>
+          <div class="edu-body">
+            <h3>Bachelor of Science in Information Systems</h3>
+            <p>Davao Del Norte State College</p>
+          </div>
+          <span class="edu-year">2022 — Present</span>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-level">Senior High</div>
+          <div class="edu-body">
+            <h3>Panabo City Senior High School</h3>
+            <p>Panabo City, Davao del Norte</p>
+          </div>
+          <span class="edu-year">2020 — 2022</span>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-level">Junior High</div>
+          <div class="edu-body">
+            <h3>Panabo City National High School</h3>
+            <p>Panabo City, Davao del Norte</p>
+          </div>
+          <span class="edu-year">2016 — 2020</span>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-level">Elementary</div>
+          <div class="edu-body">
+            <h3>Datu Abdul Dadia Elementary School</h3>
+            <p>Panabo City, Davao del Norte</p>
+          </div>
+          <span class="edu-year">2010 — 2016</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-label">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-name">HTML</span>
+          <span class="skill-type">Markup</span>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-name">CSS</span>
+          <span class="skill-type">Styling</span>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-type">Programming</span>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-name">Java</span>
+          <span class="skill-type">Programming</span>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-name">Python</span>
+          <span class="skill-type">Programming</span>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-name">CapCut</span>
+          <span class="skill-type">Video editing</span>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-name">Alight Motion</span>
+          <span class="skill-type">Video editing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-label">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-photo">
+            <img src="pos-system.jpg" alt="Point of Sale (POS) system screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">
+              <span class="placeholder-icon">🖼️</span>
+              <span>Add pos-system.jpg</span>
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-tag">Business system</span>
+          </div>
+          <h3 class="project-title">Point of Sale (POS) system</h3>
+          <p class="project-desc">A sales and inventory management system that helps businesses track transactions, manage products, and generate sales reports.</p>
+          <div class="project-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-photo">
+            <img src="electricity-monitoring.jpg" alt="Electricity monitoring system screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">
+              <span class="placeholder-icon">🖼️</span>
+              <span>Add electricity-monitoring.jpg</span>
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-tag">UI/UX design</span>
+          </div>
+          <h3 class="project-title">Electricity monitoring system</h3>
+          <p class="project-desc">A design concept for a system that monitors and records electricity usage, helping users and administrators track consumption and improve efficiency. Designed and prototyped in Figma.</p>
+          <div class="project-tags">
+            <span class="tech-tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-photo">
+            <img src="skillshare-app.jpg" alt="Skill share app screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">
+              <span class="placeholder-icon">🖼️</span>
+              <span>Add skillshare-app.jpg</span>
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-tag">UI/UX design</span>
+          </div>
+          <h3 class="project-title">Skill share app</h3>
+          <p class="project-desc">A platform concept that connects people who want to teach or learn new skills within their community, covering skill browsing, session booking, and profile matching. Designed and prototyped in Figma.</p>
+          <div class="project-tags">
+            <span class="tech-tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-photo">
+            <img src="lumina.jpg" alt="Lumina library management system screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">
+              <span class="placeholder-icon">🖼️</span>
+              <span>Add lumina.jpg</span>
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-tag">Capstone project</span>
+          </div>
+          <h3 class="project-title">Lumina — Library Management System</h3>
+          <p class="project-desc">A full-scale library management system handling book inventory, borrowing and returning processes, user management, and record tracking to improve library operations.</p>
+          <div class="project-tags">
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">NestJS</span>
+            <span class="tech-tag">TypeORM</span>
+            <span class="tech-tag">Passport JWT</span>
+            <span class="tech-tag">Vue (Composition API)</span>
+            <span class="tech-tag">Pinia</span>
+            <span class="tech-tag">Tailwind CSS v4</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-photo">
+            <img src="barangay-website.jpg" alt="Barangay website management system screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">
+              <span class="placeholder-icon">🖼️</span>
+              <span>Add barangay-website.jpg</span>
+            </div>
+          </div>
+          <div class="project-top">
+            <span class="project-tag">Web system</span>
+          </div>
+          <h3 class="project-title">Barangay website management system</h3>
+          <p class="project-desc">A web-based platform designed to improve barangay-level services, including announcements, resident information, and community updates.</p>
+          <div class="project-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-label">Contact</h2>
+      <p class="contact-intro reveal">Feel free to reach out anytime.</p>
+
+      <form class="contact-form reveal" action="mailto:mamangon.julimar@dnsc.edu.ph" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="Name" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="Email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send message</button>
+      </form>
+
+      <div class="contact-divider reveal"><span>or reach me directly</span></div>
+
+      <div class="contact-links reveal">
+        <a href="mailto:mamangon.julimar@dnsc.edu.ph" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>mamangon.julimar@dnsc.edu.ph</span>
+        </a>
+        <a href="https://github.com/mamangonjulimar-max" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          <span>github.com/mamangonjulimar-max</span>
+        </a>
+        <a href="https://www.linkedin.com/in/julimar-mamangon-bb5142367" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>linkedin.com/in/julimar-mamangon-bb5142367</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Julimar B. Mamangon Jr. · BS Information Systems · Davao Del Norte State College · 2026</p>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      var html = document.documentElement;
+      btn.setAttribute('aria-pressed', String(html.getAttribute('data-theme') === 'dark'));
+
+      btn.addEventListener('click', function () {
+        var isDark = html.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          html.removeAttribute('data-theme');
+          try { localStorage.setItem('theme', 'light'); } catch (e) {}
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          try { localStorage.setItem('theme', 'dark'); } catch (e) {}
+        }
+        btn.setAttribute('aria-pressed', String(!isDark));
+      });
+    })();
+  </script>
+
+  <script>
+    // Fade-in-on-scroll for elements marked .reveal
+    (function () {
+      var revealEls = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
